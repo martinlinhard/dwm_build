@@ -122,6 +122,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_i,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_i,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_t,  setgaps,        {.i = 0  } },
+	{ MODKEY,             			XK_t,  setgaps,        {.i = +8  } },
 	TAGKEYS(                        XK_1,                      0)
 		TAGKEYS(                        XK_2,                      1)
 		TAGKEYS(                        XK_3,                      2)
