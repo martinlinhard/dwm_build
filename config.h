@@ -88,7 +88,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = screen_settings } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = settings } },
 	{ MODKEY|ShiftMask,             XK_x,      spawn,          {.v = lock_screen } },
-	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = launcher } },
+	//{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = launcher } },
 	{ MODKEY|ShiftMask,             XK_k,      spawn,          {.v = xkill } },
 	{ MODKEY|ShiftMask,             XK_p,      spawn,          {.v = spectacle } },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          {.v = restart } },
@@ -118,6 +118,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	//the next 3 are for toggling gaps
+	{ MODKEY|ShiftMask,             XK_i,  setgaps,        {.i = -1 } },
+	{ MODKEY,                       XK_i,  setgaps,        {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_t,  setgaps,        {.i = 0  } },
 	TAGKEYS(                        XK_1,                      0)
 		TAGKEYS(                        XK_2,                      1)
 		TAGKEYS(                        XK_3,                      2)
