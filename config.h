@@ -27,8 +27,7 @@ static const char *colors[][3]      = {
 static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
-	/* xprop(1):
-	 *	WM_CLASS(STRING) = instance, class
+	/* xprop(1): WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
@@ -122,7 +121,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_i,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_i,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_t,  setgaps,        {.i = 0  } },
-	{ MODKEY,             			XK_t,  setgaps,        {.i = +8  } },
+	{ MODKEY,             			XK_t,  setgaps,        {.i = +gappx  } },
 	TAGKEYS(                        XK_1,                      0)
 		TAGKEYS(                        XK_2,                      1)
 		TAGKEYS(                        XK_3,                      2)
